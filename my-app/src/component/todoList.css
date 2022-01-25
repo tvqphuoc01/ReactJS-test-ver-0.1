@@ -1,0 +1,99 @@
+div {
+    display: block;
+}
+
+.TodoList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text-checked {
+    text-decoration: line-through;
+    color: #d9d9d9;;
+}
+
+.toggle {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    appearance: none;
+    background-image: url('../../public/uncheck.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.toggle-checked {
+    background-image: url('../../public/checked.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.toggle-checked:hover {
+    cursor: pointer;
+}
+
+.toggle:hover {
+    cursor: pointer;
+}
+
+label {
+    word-break: break-all;
+    padding: 15px 15px 15px 60px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+}
+
+.destroy {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    transition: color 0.2s ease-out;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.destroy:after {
+    content: '×';
+    color: #af5b5e;
+}
+
+.destroy:hover {
+    cursor: pointer;
+}
+
+li {
+    word-break: break-all;
+    padding: 15px 15px 15px 60px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+    position: relative;
+    font-size: 24px;
+}
